@@ -10,7 +10,7 @@
       android:name="sm_vertical_line"
       android:strokeColor="@android:color/white"
       android:strokeWidth="3"
-      android:pathData="M14.0132576,0.212121212 L14.0132576,7.84848485" />
+      android:pathData="M14.0132576,0.212121212 L14.0132576,9.84848485" />
     <path
       android:name="lg_vertical_line"
       android:strokeColor="@android:color/white"

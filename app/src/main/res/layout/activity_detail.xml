@@ -13,7 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:scaleType="centerCrop"
-            android:transitionName="tImage" />
+            android:transitionName="tImage"
+            />
 
         <LinearLayout
             android:id="@+id/llEditTextHolder"
@@ -31,6 +32,10 @@
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_detail"/>
 
     </FrameLayout>
 
@@ -52,7 +57,8 @@
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="10dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:text="Test Place Name" />
 
         </LinearLayout>
 
@@ -66,18 +72,25 @@
             android:background="@drawable/btn_background"
             android:contentDescription="@null"
             android:elevation="@dimen/button_elevation"
+            android:alpha="0.0"
             android:src="@drawable/icn_add" />
 
     </FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="-10dp"
-        android:text="My Activities"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/primary_dark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:text="My Activities"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/primary_dark" />
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/list"
